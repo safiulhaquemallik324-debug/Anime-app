@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AnimeVerse</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Remix Icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar">
+
+    <div class="logo">
+      <i class="ri-ghost-2-fill"></i>
+      <h2>AnimeVerse</h2>
+    </div>
+
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Trending</a>
+      <a href="#">Popular</a>
+      <a href="#">Genres</a>
+    </div>
+
+    <div class="right">
+
+      <button class="theme-btn">
+        <i class="ri-moon-fill"></i>
+      </button>
+
+      <div class="menu-btn">
+        <i class="ri-menu-3-line"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        Discover Your Favorite
+        <span>Anime World</span>
+      </h1>
+
+      <p>
+        Search thousands of anime instantly with smooth experience,
+        ratings, trailers, genres and more.
+      </p>
+
+      <!-- Search Box -->
+      <div class="search-box">
+
+        <i class="ri-search-line"></i>
+
+        <input type="text" id="search-input" placeholder="Search anime like Naruto...">
+
+        <button id="search-btn">
+          Search
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ================= FILTER SECTION ================= -->
+  <section class="hero" id="home">
+
+    <div class="genre-card" data-genre="1">
+      <h2>🔥 Action</h2>
+      <p>Fast paced anime fights</p>
+    </div>
+
+    <div class="genre-card" data-genre="22">
+      <h2>💕 Romance</h2>
+      <p>Love & emotional stories</p>
+    </div>
+
+    <div class="genre-card" data-genre="10">
+      <h2>✨ Fantasy</h2>
+      <p>Magic & fantasy worlds</p>
+    </div>
+
+    <div class="genre-card" data-genre="4">
+      <h2>😂 Comedy</h2>
+      <p>Funny anime moments</p>
+    </div>
+
+    <div class="genre-card" data-genre="2">
+      <h2>🗺 Adventure</h2>
+      <p>Epic anime journeys</p>
+    </div>
+
+  </section>
+
+  <!-- ================= LOADER ================= -->
+  <div class="loader hidden" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- ================= ANIME CONTAINER ================= -->
+
+  <section id="anime-section">
+
+    <main class="anime-container" id="anime-container">
+    </main>
+
+  </section>
+  <main class="anime-container" id="anime-container">
+
+    <!-- Dynamic Anime Cards Will Come Here -->
+
+  </main>
+
+  <!-- ================= EMPTY STATE ================= -->
+  <section class="empty-state" id="empty-state">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/7486/7486740.png" alt="empty">
+
+    <h2>No Anime Found</h2>
+
+    <p>
+      Try searching another anime name.
+    </p>
+
+  </section>
+
+  <!-- ================= MODAL ================= -->
+  <div class="anime-modal hidden" id="anime-modal">
+
+    <div class="modal-content">
+
+      <button class="close-modal" id="close-modal">
+        <i class="ri-close-line"></i>
+      </button>
+
+      <div class="modal-body">
+
+        <!-- Dynamic Details -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+
+    <p>
+      Built with ❤️ using HTML, CSS & JavaScript
+    </p>
+
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
